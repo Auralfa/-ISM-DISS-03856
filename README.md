@@ -1,1 +1,1 @@
-# Multi-modal sensing based on Lidar, Radar and camera
+# Multi-modal Sensing based on Lidar, Radar and Camera
