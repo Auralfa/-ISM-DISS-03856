@@ -16,7 +16,7 @@ LiDAR - A-LOAM
 ![序列 01_1](https://github.com/user-attachments/assets/6f7bd6c4-3bd2-45e0-9cea-67482e2ef112)
 
 
-Radar - 4DRadarSLAM
+Radar - Fast-GICP
 
 ![序列 01_2](https://github.com/user-attachments/assets/450ec057-5101-4014-ae25-5c31eba8267e)
 
