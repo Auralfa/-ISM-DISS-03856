@@ -22,6 +22,7 @@ Radar - Fast_GICP
 
 
 
-OAK-D 启动双目+IMU 比较 D455启动RGBD
+OAK-D 启动双目+IMU （下） 比较 D455启动RGBD （上）
+
 ![序列 02](https://github.com/user-attachments/assets/5850d3ed-0bb2-4929-a90c-a2cf151ecdf5)
 
