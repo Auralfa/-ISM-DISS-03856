@@ -1,0 +1,93 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+File.version: "1.0"
+
+Camera.type: "Rectified"
+
+# Rectified Camera calibration (OpenCV)
+Camera1.fx: 846.5273755673944
+Camera1.fy: 845.239147523885
+Camera1.cx: 632.8954373981097
+Camera1.cy: 359.9404461247002
+
+Camera2.fx: 845.2280477945047
+Camera2.fy: 844.8447025366182
+Camera2.cx: 630.5968521104508
+Camera2.cy: 361.05414577966985
+
+# Stereo baseline (m)
+Stereo.b: 0.0821181112964754
+
+# Camera resolution
+Camera.width: 1280
+Camera.height: 720
+
+# Camera frames per second
+Camera.fps: 4
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+# Close/Far threshold. Baseline times.
+Stereo.ThDepth: 40.0
+
+# Transformation from IMU to cam0
+IMU.T_b_c1: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: f
+   data: [-0.00070363, 0.99998455, -0.0055149, 0.07880729,
+          0.99999915, 0.00069759, -0.00109756, 0.01098974,
+          -0.0010937, -0.00551566, -0.99998419, 0.03170216,
+          0.0, 0.0, 0.0, 1.0]
+
+# Transformation from IMU to cam1
+IMU.T_b_c2: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: f
+   data: [-0.00035615, 0.99993411, -0.01147398, -0.00308807,
+          0.99999992, 0.00035788, 0.00014908, 0.01088712,
+          0.00015317, -0.01147393, -0.99993416, 0.03351438,
+          0.0, 0.0, 0.0, 1.0]
+
+# IMU noise
+IMU.NoiseGyro: 0.00159 # rad/s^0.5
+IMU.NoiseAcc: 0.0192 # m/s^1.5
+IMU.GyroWalk: 5.66e-05 # rad/s^1.5
+IMU.AccWalk: 0.000583 # m/s^2.5
+IMU.Frequency: 200.0
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+# ORB Extractor: Number of features per image
+ORBextractor.nFeatures: 1250
+
+# ORB Extractor: Scale factor between levels in the scale pyramid 
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid 
+ORBextractor.nLevels: 8
+
+# ORB Extractor: Fast threshold
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3.0
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -3.5
+Viewer.ViewpointF: 500.0
+
